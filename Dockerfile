@@ -16,7 +16,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /tmp/*
 
-RUN git clone https://github.com/mozilla/seasponge.git seasponge && \
+RUN git clone -b stencil_dev https://github.com/ejherlig/seasponge.git seasponge && \
   cd seasponge && \
   npm install && \
   bower --allow-root install
